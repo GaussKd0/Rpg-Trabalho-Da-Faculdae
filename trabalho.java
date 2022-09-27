@@ -3,7 +3,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class trabalho {
-    
+    // eu sei que eu nao sabia que eu poderia usar a variavel publica sem a nescecidade de retornar o valor entao criei varias funcoes desnecessarias, fui burro kkkkkk
+
     public static String Racas;
     
     public static String TipoMagia;
@@ -19,6 +20,8 @@ public class trabalho {
     public static String NpcNomes;
     
     public static String Historia;
+
+    public static int XP;
     
     public static String Receber(String Receber)
     {
@@ -69,6 +72,12 @@ public class trabalho {
     {
         Historia = Receber;
         return Historia;     
+       
+    }
+    public static int Receber8(int Receber)
+    {
+        XP = Receber;
+        return XP;     
        
     }
     
@@ -169,7 +178,6 @@ public class trabalho {
                 
          switch(Racas){
             case "Humano":
-               
                 batalha2(5, 4, 5, 5,TipoMagia, Objetos);
             break;
             
@@ -313,6 +321,7 @@ public class trabalho {
             }
             else
             {
+                XP =+ 10;
                 System.out.println("Inimigo Derrotado");
             }
         }
@@ -320,6 +329,11 @@ public class trabalho {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int continuar = 1;
+        System.out.println("Bem Vindo Ao Meu Rpg!");
+        scan.nextLine();
+        System.out.println("Esse É Um Rpg Bem Basico E De Texto, Que Eu Fiz Como Trabalho Da Faculdade");
+        System.out.println("Vamos Criar Seu Personagem");
+        scan.nextLine();
         NomesNpcs();
         scan.nextLine();
         Nome();
@@ -427,6 +441,13 @@ public class trabalho {
                 break;
             
         }
+       
+    }
+    public static void xp(){
+      if(XP >= 100){
+        System.out.println("Voce Upou De Lvl,  Todos Os Seus Atributos Seram Upados");
+      }
+
     }
 }
 
