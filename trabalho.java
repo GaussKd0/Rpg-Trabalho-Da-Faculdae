@@ -3,7 +3,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class trabalho {
-    // eu sei que eu nao sabia que eu poderia usar a variavel publica sem a nescecidade de retornar o valor entao criei varias funcoes desnecessarias, fui burro kkkkkk
+    // eu não sabia que eu poderia usar a variavel publica sem a nescecidade de retornar o valor, então criei varias funções desnecessarias, fui burro kkkkkk
+    // tem muitas coisas que eu ainda não tenho o conhecimento suficiente para terminar
+    // porfavor tenha piedade de mim professor, deu mó trabalho kkkkkk.
 
     public static String Racas;
     
