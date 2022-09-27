@@ -203,8 +203,7 @@ public class trabalho {
         int hpBot = 2;
         int quantidadeEspecial = 5;
         int escolherAtk;
-        int quantidadeArma;
-        
+                
          while(hp > 0  && hpBot > 0)
         {
             printVida(hp, hpBot, quantidadeEspecial);
@@ -223,6 +222,11 @@ public class trabalho {
                     String EspecialidadeMagia;
                     int escuridao = 5;
                     int eletricidade = 8;
+                    int fogo = 10;
+                    int terra = 4;
+                    int ar = 5;
+                    int luz = 7;
+
                     switch (TipoMagia)
                     {
                                                     
@@ -233,15 +237,15 @@ public class trabalho {
                               hpBot -= magia + eletricidade;
                             break;
                         case "Fogo":
-                              hpBot -= magia + eletricidade;
+                              hpBot -= magia + fogo;
                         case "Terra":
-                              hpBot -= magia + eletricidade;
+                              hpBot -= magia + terra;
                             break;
                         case "Ar":
-                              hpBot -= magia + eletricidade;
+                              hpBot -= magia + ar;
                             break;
                         case "Luz":
-                              hpBot -= magia + eletricidade;
+                              hpBot -= magia + luz;
                             break;      
                     }
                     
